@@ -1,5 +1,5 @@
 
-const accessKey = 'EccCli-le9O4ky0qv-X5ox502M8aoMMDTk0Bf_e3LTk'; 
+const accessKey = '6ZlSIowY05IqEj89Hj7spqVGn5MqpaX88h6vZOnhNcA'; 
 
 const formEl = document.getElementById('search-form');
 const inputEl = document.getElementById('search-box');
@@ -12,7 +12,7 @@ let page = 1;
 async function searchImages() {
     try {
         inputData = inputEl.value;
-        const url = https://api.unsplash.com/search/photos?page=${page}&query=${encodeURIComponent(inputData)}&client_id=${accessKey}&per_page=9;
+        const url = `https://api.unsplash.com/search/photos?page=${page}&query=${encodeURIComponent(inputData)}&client_id=${accessKey}&per_page=9`;
 
         const response = await fetch(url);
         if (!response.ok) throw new Error('Failed to fetch images');
